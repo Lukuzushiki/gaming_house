@@ -1,0 +1,360 @@
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;700&family=Press+Start+2P&display=swap");
+@import "colorVariables";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "container-grid";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+// Brand
+.brand-text-icon {
+  font-family: "Chewy", cursive;
+  font-size: 2rem;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+//Hero
+header {
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  width: 100%;
+  height: 38.75rem;
+
+  h1,
+  h5 {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+  }
+
+  h1 {
+    margin-top: 150px;
+    font-size: 48px;
+
+    span {
+      color: $pink;
+    }
+  }
+
+  h5 {
+    margin-top: 1rem;
+    line-height: 170%;
+    font-size: 24px;
+  }
+}
+
+// Navbar Transparent
+.navbar {
+  height: 70px;
+  font-weight: bold;
+  font-size: 20px;
+
+  &.transparent {
+    background-color: $gray-700;
+  }
+
+  ul.navbar-nav {
+    li.nav-item {
+      &.active {
+        a.nav-link {
+          color: $pink;
+        }
+      }
+
+      a {
+        &.nav-link {
+          letter-spacing: 1px;
+          color: $white;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          transition: color 0.35s ease-in-out;
+
+          &:hover {
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Featured
+section {
+  &.special {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-800;
+    height: 250px;
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 20px;
+
+      .register {
+        color: $pink;
+        font-weight: bold;
+      }
+    }
+  }
+
+  margin-top: 100px;
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: medium;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: $pink;
+  }
+
+  .img-wrapper-brand {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    .img-cover {
+      &.thumbnail {
+        object-fit: fill;
+        max-height: 100px;
+      }
+
+      &.emblem {
+        top: 50%;
+        max-height: 100px;
+        max-width: 100px;
+      }
+    }
+  }
+
+  .img-cover {
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .img-poster {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .recomended {
+    .img-wrapper {
+      transform: scale(1);
+      transition: 0.25s ease-in-out;
+    }
+
+    .meta-wrapper {
+      z-index: 4;
+      color: $white;
+      padding: 100px 50px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      transform: translateY(0);
+      transition: 0.3s ease-in-out;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+    }
+
+    &:hover {
+      .meta-wrapper {
+        transform: translateY(-10px);
+      }
+
+      &:after {
+        transform: scale(1);
+      }
+
+      .img-wrapper {
+        transform: scale(0.99);
+      }
+    }
+  }
+
+  .card {
+    border-radius: 20px;
+    background-color: transparent;
+
+    .meta-wrapper {
+      margin-top: 1rem;
+
+      h5 {
+        font-size: 18px;
+        margin-bottom: 2px;
+      }
+
+      span {
+        font-size: 0.875rem;
+      }
+
+      .streched-link {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .img-wrapper {
+      height: 100%;
+      margin-bottom: 0;
+      border-radius: 0.9375rem;
+      overflow: hidden;
+    }
+
+    &.card-featured {
+      overflow: hidden;
+      cursor: pointer;
+      height: 100%;
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        z-index: 2;
+        @include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
+      }
+
+      .img-wrapper {
+        z-index: 1;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scale(1.1);
+        transition: 0.25s ease-in-out;
+      }
+
+      .meta-wrapper {
+        z-index: 4;
+        color: $white;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(0);
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+
+      &:hover {
+        .meta-wrapper {
+          transform: translateY(-10px);
+        }
+
+        &:after {
+          transform: scale(1);
+        }
+
+        .img-wrapper {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  padding-top: 50px;
+
+  .brand-text-icon {
+    font-size: 3rem;
+  }
+
+  .img-social {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .list-group-item {
+    border: 0;
+    background-color: transparent;
+
+    a,
+    span {
+      color: $white;
+    }
+  }
+
+  .copyrights {
+    margin: 25px 0;
+    font-family: "Chewy", cursive;
+  }
+}

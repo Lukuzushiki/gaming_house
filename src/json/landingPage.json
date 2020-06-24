@@ -1,0 +1,112 @@
+{
+  "featured": [
+    {
+      "id": "wtchadgs2",
+      "title": "Watch Dogs",
+      "price": 13.23,
+      "imageDisplay": "/images/watch-dogs/main-display1.png",
+      "imageThumbnail": [
+        {
+          "id": "1",
+          "url": "/images/watch-dogs/thumbnail-1.png"
+        },
+        {
+          "id": "2",
+          "url": "/images/watch-dogs/thumbnail-2.png"
+        },
+        {
+          "id": "3",
+          "url": "/images/watch-dogs/thumbnail-3.png"
+        },
+        {
+          "id": "4",
+          "url": "/images/watch-dogs/thumbnail-4.png"
+        }
+      ]
+    },
+    {
+      "id": "rdr2",
+      "title": "Red Dead Redemption II",
+      "price": 13.23,
+      "imageDisplay": "/images/red-dead/main-display1.png",
+      "imageThumbnail": [
+        {
+          "id": "1",
+          "url": "/images/red-dead/thumbnail-1.png"
+        },
+        {
+          "id": "2",
+          "url": "/images/red-dead/thumbnail-2.png"
+        },
+        {
+          "id": "3",
+          "url": "/images/red-dead/thumbnail-3.png"
+        },
+        {
+          "id": "4",
+          "url": "/images/red-dead/thumbnail-4.png"
+        }
+      ]
+    }
+  ],
+
+  "newGames": [
+    {
+      "_id": "prsn4",
+      "title": "Persona 4",
+      "price": 20.12,
+      "imgUrls": "/images/persona-4.png"
+    },
+    {
+      "_id": "rdr2",
+      "title": "Red Dead Redemption II",
+      "price": 50.12,
+      "imgUrls": "/images/rdr.png"
+    },
+    {
+      "_id": "zelda2",
+      "title": "Legend Of Zelda",
+      "price": 10.12,
+      "imgUrls": "/images/zelda.png"
+    },
+    {
+      "_id": "acs23123",
+      "title": "Assassin's Creed Syndicate",
+      "price": 10.12,
+      "imgUrls": "/images/ACS.png"
+    }
+  ],
+
+  "recomended": {
+    "title": "Final Fantasy VII Remake",
+    "desc": "The world has fallen under the control of the Shinra Electric Power Company, a shadowy corporation controlling the planet’s very life force as mako energy.",
+    "imgUrls": "/images/recomended.png"
+  },
+
+  "partner": [
+    {
+      "title": "EA Games",
+      "imgUrls": "/images/partner-1.png"
+    },
+    {
+      "title": "Rockstar Games",
+      "imgUrls": "/images/partner-2.png"
+    },
+    {
+      "title": "Bandai Namco",
+      "imgUrls": "/images/partner-3.png"
+    },
+    {
+      "title": "Ubisoft",
+      "imgUrls": "/images/partner-4.png"
+    },
+    {
+      "title": "Blizzard",
+      "imgUrls": "/images/partner-5.png"
+    },
+    {
+      "title": "Konami",
+      "imgUrls": "/images/partner-6.png"
+    }
+  ]
+}
