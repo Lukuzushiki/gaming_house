@@ -1,0 +1,11 @@
+{
+  "news": [
+    {
+      "_id": "tst123412",
+      "title": "GTA V Update",
+      "date": "17 September 2020",
+      "content": "New update on matchmakings",
+      "imgUrls": "/images/news.png"
+    }
+  ]
+}
