@@ -24,7 +24,7 @@ export default function newGames(props) {
                     <div className="meta-wrapper">
                       <Button
                         type="link"
-                        className="streched-link d-block text-pink mb-2"
+                        className="streched-link d-block text-blue mb-2"
                         href={`/properties/${item._id}`}
                       >
                         {item.title}

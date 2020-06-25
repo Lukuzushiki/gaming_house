@@ -1,0 +1,25 @@
+{
+  "post": [
+    {
+      "name": "Joana",
+      "timePosted": "12 January 2020",
+      "content": "Hello Guys, Welcome in this community",
+      "imgUrls": "/images/post-pict-1.png",
+      "totalLikes": 10
+    },
+    {
+      "name": "Bryan",
+      "timePosted": "15 January 2020",
+      "content": "I'm happy to share my experience in this community",
+      "imgUrls": "/images/post-pict-2.png",
+      "totalLikes": 100
+    },
+    {
+      "name": "Reaper",
+      "timePosted": "18 January 2020",
+      "content": "Lets win together",
+      "imgUrls": "/images/post-pict-3.png",
+      "totalLikes": 30
+    }
+  ]
+}

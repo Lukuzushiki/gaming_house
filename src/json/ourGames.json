@@ -1,0 +1,147 @@
+{
+  "categories": [
+    {
+      "_id": "act123134",
+      "title": "Action"
+    },
+    {
+      "_id": "adv231233",
+      "title": "Adventure"
+    },
+    {
+      "_id": "arc2312",
+      "title": "Arcade"
+    },
+    {
+      "_id": "csaul123132",
+      "title": "Casual"
+    },
+    {
+      "_id": "fiasdp87598",
+      "title": "First Person"
+    },
+    {
+      "_id": "hrr87473989",
+      "title": "Horror"
+    },
+    {
+      "_id": "ind276482",
+      "title": "Indie"
+    },
+    {
+      "_id": "pzzl773879",
+      "title": "Puzzle"
+    }
+  ],
+
+  "gameList": [
+    {
+      "_id": "ascs123412412",
+      "title": "Assasins Creed Syndicate",
+      "imgUrls": "/images/list-game-1.png",
+      "releaseDate": "12061018"
+    },
+    {
+      "_id": "psn41234124",
+      "title": "Persona 4",
+      "imgUrls": "/images/list-game-2.png",
+      "releaseDate": "14091020"
+    },
+    {
+      "_id": "rdr23124123",
+      "title": "Red Dead Redemption II",
+      "imgUrls": "/images/list-game-3.png",
+      "releaseDate": "12061019"
+    },
+    {
+      "_id": "wtchdgs212413",
+      "title": "Watch Dogs",
+      "imgUrls": "/images/list-game-4.png",
+      "releaseDate": "20121018"
+    },
+    {
+      "_id": "tlogzda123142",
+      "title": "The Legend of Zelda",
+      "imgUrls": "/images/list-game-5.png",
+      "releaseDate": "12071019"
+    },
+    {
+      "_id": "wtchdgs214431321",
+      "title": "Watch Dogs II",
+      "imgUrls": "/images/list-game-6.png",
+      "releaseDate": "12061019"
+    },
+    {
+      "_id": "ascs123412412",
+      "title": "Assasins Creed Syndicate",
+      "imgUrls": "/images/list-game-1.png",
+      "releaseDate": "12061018"
+    },
+    {
+      "_id": "psn41234124",
+      "title": "Persona 4",
+      "imgUrls": "/images/list-game-2.png",
+      "releaseDate": "14091020"
+    },
+    {
+      "_id": "rdr23124123",
+      "title": "Red Dead Redemption II",
+      "imgUrls": "/images/list-game-3.png",
+      "releaseDate": "12061019"
+    },
+    {
+      "_id": "wtchdgs212413",
+      "title": "Watch Dogs",
+      "imgUrls": "/images/list-game-4.png",
+      "releaseDate": "20121018"
+    },
+    {
+      "_id": "tlogzda123142",
+      "title": "The Legend of Zelda",
+      "imgUrls": "/images/list-game-5.png",
+      "releaseDate": "12071019"
+    },
+    {
+      "_id": "wtchdgs214431321",
+      "title": "Watch Dogs II",
+      "imgUrls": "/images/list-game-6.png",
+      "releaseDate": "12061019"
+    },
+    {
+      "_id": "ascs123412412",
+      "title": "Assasins Creed Syndicate",
+      "imgUrls": "/images/list-game-1.png",
+      "releaseDate": "12061018"
+    },
+    {
+      "_id": "psn41234124",
+      "title": "Persona 4",
+      "imgUrls": "/images/list-game-2.png",
+      "releaseDate": "14091020"
+    },
+    {
+      "_id": "rdr23124123",
+      "title": "Red Dead Redemption II",
+      "imgUrls": "/images/list-game-3.png",
+      "releaseDate": "12061019"
+    },
+    {
+      "_id": "wtchdgs212413",
+      "title": "Watch Dogs",
+      "imgUrls": "/images/list-game-4.png",
+      "releaseDate": "20121018"
+    },
+    {
+      "_id": "tlogzda123142",
+      "title": "The Legend of Zelda",
+      "imgUrls": "/images/list-game-5.png",
+      "releaseDate": "12071019"
+    },
+    {
+      "_id": "wtchdgs214431321",
+      "title": "Watch Dogs II",
+      "imgUrls": "/images/list-game-6.png",
+      "releaseDate": "12061019"
+    }
+  ]
+}

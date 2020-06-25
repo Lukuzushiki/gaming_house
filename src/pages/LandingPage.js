@@ -19,7 +19,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        <Navbar {...this.props} />
+        <Navbar {...this.props} isLanding />
         <Featured data={landingPage.featured} />
         <Games data={landingPage.newGames} />
         <Recomended data={landingPage.recomended} />
