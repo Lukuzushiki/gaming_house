@@ -509,6 +509,43 @@ section {
     clear: both;
     display: table;
   }
+
+  .about {
+    img {
+      height: 330px;
+      overflow: hidden;
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: normal;
+
+      .text-blue {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .vision {
+    background: url(../images/illustration-about-2.png);
+    background-size: cover;
+    padding: 20px;
+
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: normal;
+    }
+  }
 }
 
 // Footer
