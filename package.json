@@ -12,6 +12,8 @@
     "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-dom": "^16.13.1",
     "react-dropdown": "^1.7.0",
+    "react-image-gallery": "^1.0.7",
+    "react-image-select": "^1.0.1",
     "react-js-pagination": "^3.0.3",
     "react-responsive-carousel": "^3.2.8",
     "react-reveal": "^1.2.2",

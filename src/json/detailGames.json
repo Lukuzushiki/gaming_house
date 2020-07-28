@@ -1,0 +1,57 @@
+{
+  "title": "Watch Dogs",
+  "releaseDate": "17 September 2013",
+  "publisher": "Rockstar Games",
+  "developer": "Rockstar Games",
+  "tags": [
+    {
+      "id": "asdads",
+      "genre": "Action, "
+    },
+    {
+      "id": "asdads",
+      "genre": "Adventure"
+    }
+  ],
+  "price": 13.23,
+  "images": {
+    "imgPoster": "/images/watch-dogs-poster.png",
+    "imgThumbnail": [
+      {
+        "_id": "213wqdasads",
+        "thumbnailUrls": "/images/watch-dogs-thumbnail-1.png"
+      },
+      {
+        "_id": "akjshdh23",
+        "thumbnailUrls": "/images/watch-dogs-thumbnail-2.png"
+      },
+      {
+        "_id": "ksahkjk123",
+        "thumbnailUrls": "/images/watch-dogs-thumbnail-3.png"
+      },
+      {
+        "_id": "nbasfk1324",
+        "thumbnailUrls": "/images/watch-dogs-thumbnail-4.png"
+      }
+    ]
+  },
+  "about": "The storyline of Watch Dogs explores the impact of technology within our society; bringing to the forefront the concept of information warfare, data being interconnected, and the world's increasing use of technology — questioning who exactly runs the computers they depend on.The game is set in a contemporary fictionalized version of Chicago, Illinois, which is one of many cities to feature a supercomputer known as CTOS (Central Operating System). In this version of Chicago, everyone and everything is connected. The city's overarching network controls almost every piece of technology in the city; banks, security cameras, traffic lights, communication hubs, and even key data on the city's residents and activities have been complied into the system and can be used for various purposes. In the game's universe, the Northeast blackout of 2003 was found to be caused by a hacker, prompting the development of CTOS.",
+  "systemRequirements": {
+    "minimum": {
+      "operatingSystem": "Windows",
+      "processor": "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
+      "memory": "4 GB RAM",
+      "videoCard": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)",
+      "soundCard": "100% DirectX 10 Compatible",
+      "hddSpace": "99 GB Free Space"
+    },
+    "maximum": {
+      "operatingSystem": "Windows",
+      "processor": "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
+      "memory": "4 GB RAM",
+      "videoCard": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)",
+      "soundCard": "100% DirectX 10 Compatible",
+      "hddSpace": "99 GB Free Space"
+    }
+  }
+}

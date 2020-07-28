@@ -6,6 +6,7 @@
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;700&family=Press+Start+2P&display=swap");
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import "colorVariables";
 @import "functions";
 @import "variables";
@@ -116,7 +117,6 @@ header {
         font-size: 20px;
         font-weight: normal;
       }
-
     }
 
     .nav-item {
@@ -358,7 +358,6 @@ section {
     }
 
     &.card-post {
-
       h2 {
         &.card-header {
           align-items: center;
@@ -368,7 +367,6 @@ section {
           border-radius: 10px 10px 0 0;
         }
       }
-
 
       .card-body {
         border-radius: 10px 10px 0 0;
@@ -544,6 +542,61 @@ section {
     p {
       font-size: 24px;
       font-weight: normal;
+    }
+  }
+
+  .detail-contribution {
+    h5 {
+      color: $blue;
+      font-size: 14px;
+      font-weight: bold;
+
+      &.content {
+        font-weight: normal;
+        color: $white;
+      }
+    }
+
+    .price {
+      h4 {
+        font-size: 24px;
+        font-weight: bold;
+
+        span {
+          color: $pink;
+        }
+      }
+    }
+
+    &.description {
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+
+  .requirement {
+    h3 {
+      font-size: 24px;
+    }
+
+    table {
+      font-size: 18px;
+      margin-top: 30px;
+
+      tr {
+        th {
+          width: 200px;
+          text-align: left;
+          color: $blue;
+          vertical-align: top;
+          padding-bottom: 20px;
+        }
+
+        td {
+          text-align: left;
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }
