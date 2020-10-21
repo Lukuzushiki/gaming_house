@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import Navbar from "parts/Navbar";
 import Menu from "parts/navCommunity";
@@ -6,10 +7,20 @@ import Post from "parts/Post";
 import Footer from "parts/Footer";
 import About from "parts/aboutCommunity";
 
-import communityData from "json/Community.json";
+import { fetchPage } from "store/actions/page";
 
-export default class Community extends Component {
+class Community extends Component {
+  componentDidMount() {
+    window.title = "Gaming House | Community";
+    window.scrollTo(0, 0);
+
+    if (!this.props.page.communityPage)
+      this.props.fetchPage("/community-page", "communityPage");
+  }
   render() {
+    const { page } = this.props;
+
+    if (!page.hasOwnProperty("communityPage")) return null;
     return (
       <div>
         <Navbar {...this.props} />
@@ -17,10 +28,10 @@ export default class Community extends Component {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <Post post={communityData.post} />
+              <Post post={page.communityPage.community} />
             </div>
             <div className="col-4">
-              <About />
+              <About data={page.communityPage.user} />
             </div>
           </div>
         </div>
@@ -29,3 +40,9 @@ export default class Community extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  page: state.page,
+});
+
+export default connect(mapStateToProps, { fetchPage })(Community);

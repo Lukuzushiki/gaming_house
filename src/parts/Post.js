@@ -35,19 +35,19 @@ export default class Post extends Component {
                   <div className="card-body">
                     <div className="account-posted mb-2">
                       <img
-                        src={item.imgUrls}
+                        src={`${process.env.REACT_APP_CLOUD}/${item.userId.photoImage}`}
                         alt="profile-pict"
                         className="img-pict-post"
                       />
 
                       <div className="account-data">
-                        <h5>{item.name}</h5>
-                        <p>{item.timePosted}</p>
+                        <h5>{item.userId.username}</h5>
+                        <p>{item.postDate}</p>
                       </div>
                     </div>
 
                     <div className="content">
-                      <p>{item.content}</p>
+                      <p>{item.posted}</p>
                     </div>
                   </div>
 
@@ -63,13 +63,13 @@ export default class Post extends Component {
                           this.state.btnLike === true ? "text-blue" : ""
                         }`}
                       >
-                        {this.state.likes} Like
+                        {item.totalLikes} Like
                       </h3>
                     </Button>
 
                     <Button className="btn-act" type="link">
                       <img src={Coment} alt="" className="act-icon" />
-                      <h3>{this.state.comments} Coment</h3>
+                      <h3>{item.commentId.length} Coment</h3>
                     </Button>
 
                     <Button className="btn-act" type="link">

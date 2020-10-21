@@ -15,7 +15,7 @@ export default function aboutCommunity(props) {
           </div>
           <div className="card-footer about">
             <h2>
-              <span>300K</span> Members
+              <span>{props.data.length}</span> Members
             </h2>
             <p>Created on 10 December 2018</p>
           </div>
