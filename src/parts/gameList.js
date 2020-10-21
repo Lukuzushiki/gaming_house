@@ -52,7 +52,11 @@ export default class gameList extends Component {
                       style={{ backgroundColor: "transparent" }}
                     >
                       <figure className="img-wrapper">
-                        <img src={item.imgUrls} alt="" className="img-poster" />
+                        <img
+                          src={`${process.env.REACT_APP_CLOUD}/${item.imageId[0].imageUrl}`}
+                          alt=""
+                          className="img-poster"
+                        />
                       </figure>
                       <div className="meta-wrapper">
                         <Button className="streched-link d-block" type="link">

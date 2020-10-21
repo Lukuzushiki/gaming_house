@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import Navbar from "parts/Navbar";
 import Featured from "parts/Featured";
@@ -8,25 +9,42 @@ import Partner from "parts/Partners";
 import Special from "parts/Special";
 import Footer from "parts/Footer";
 
-import landingPage from "json/landingPage.json";
+import { fetchPage } from "store/actions/page";
 
-export default class LandingPage extends Component {
+class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.refMostPicked = React.createRef();
   }
 
+  componentDidMount() {
+    window.title = "Gaming House | Home";
+    window.scrollTo(0, 0);
+
+    if (!this.props.page.landingPage)
+      this.props.fetchPage(`/landing-page`, "landingPage");
+  }
+
   render() {
+    const { page } = this.props;
+
+    if (!page.hasOwnProperty("landingPage")) return null;
     return (
-      <div>
+      <>
         <Navbar {...this.props} isLanding />
-        <Featured data={landingPage.featured} />
-        <Games data={landingPage.newGames} />
-        <Recomended data={landingPage.recomended} />
-        <Partner data={landingPage.partner} />
+        <Featured data={page.landingPage.featured} />
+        <Games data={page.landingPage.newGames} />
+        <Recomended data={page.landingPage.recomended} />
+        <Partner data={page.landingPage.partner} />
         <Special />
         <Footer />
-      </div>
+      </>
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  page: state.page,
+});
+
+export default connect(mapStateToProps, { fetchPage })(LandingPage);

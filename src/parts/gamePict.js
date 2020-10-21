@@ -1,8 +1,6 @@
 import React from "react";
 import ImageGalery from "react-image-gallery";
 
-import Button from "elements/Button";
-
 export default function gamePict(props) {
   return (
     <section className="container">
@@ -11,10 +9,10 @@ export default function gamePict(props) {
       <div className="row">
         <div className="col-8">
           <ImageGalery
-            items={props.data.images.imgThumbnail.map((item) => {
+            items={props.data.imageId.map((item) => {
               return {
-                original: item.thumbnailUrls,
-                thumbnail: item.thumbnailUrls,
+                original: `${process.env.REACT_APP_CLOUD}/${item.imageUrl}`,
+                thumbnail: `${process.env.REACT_APP_CLOUD}/${item.imageUrl}`,
               };
             })}
             showPlayButton={false}
@@ -27,7 +25,7 @@ export default function gamePict(props) {
         <div className="col-4">
           <figure className="img-wrapper" style={{ height: 200 }}>
             <img
-              src={props.data.images.imgPoster}
+              src={`${process.env.REACT_APP_CLOUD}/${props.data.imageId[0].imageUrl}`}
               alt="Images"
               className="img-poster"
             />
@@ -36,21 +34,17 @@ export default function gamePict(props) {
           <div className="detail-contribution">
             <div className="row">
               <div className="col-auto">
-                <h5>Developer</h5>
-                <h5>Publishers</h5>
+                {/* <h5>Developer</h5> */}
+                {/* <h5>Publishers</h5> */}
                 <h5>Release Date</h5>
                 <h5>Tags</h5>
               </div>
 
               <div className="col-6">
-                <h5 className="content">{props.data.developer}</h5>
-                <h5 className="content">{props.data.publisher}</h5>
+                {/* <h5 className="content">{props.data.developer}</h5> */}
+                {/* <h5 className="content">{props.data.publisher}</h5> */}
                 <h5 className="content">{props.data.releaseDate}</h5>
-                <h5 className="content">
-                  {props.data.tags.map((item) => {
-                    return item.genre;
-                  })}
-                </h5>
+                <h5 className="content">{props.data.categoryId.name}</h5>
               </div>
             </div>
 

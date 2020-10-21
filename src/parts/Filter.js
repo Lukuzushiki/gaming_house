@@ -43,7 +43,7 @@ export default class Filter extends Component {
                 <div key={`categories-${[index]}`}>
                   <Fade delay={100 * index}>
                     <Button className="filter-toogle-item" type="link">
-                      {item.title}
+                      {item.name}
                     </Button>
                   </Fade>
                 </div>

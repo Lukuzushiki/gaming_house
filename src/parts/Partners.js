@@ -12,16 +12,15 @@ export default function Partners(props) {
             return (
               <Fade bottom delay={500 * index}>
                 <div
-                  className="col-2"
+                  className="col-3"
                   style={{
-                    height: 100,
                     display: "flex",
                     justifyContent: "center",
                   }}
                 >
                   <figure className="img-wrapper-brand">
                     <img
-                      src={item.imgUrls}
+                      src={`${process.env.REACT_APP_CLOUD}/${item.imageUrl}`}
                       alt=""
                       className="img-cover emblem"
                     />

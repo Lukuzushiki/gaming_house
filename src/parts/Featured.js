@@ -2,6 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Carousel from "react-bootstrap-carousel";
 import Button from "elements/Button";
+require("dotenv").config();
 
 export default function Featured(props) {
   return (
@@ -28,13 +29,13 @@ export default function Featured(props) {
                   <figure className="img-wrapper">
                     <img
                       className="img-cover"
-                      src={featured.imageDisplay}
+                      src={`${process.env.REACT_APP_CLOUD}/${featured.imageId[0].imageUrl}`}
                       alt=""
                     />
                   </figure>
                 </div>
 
-                {featured.imageThumbnail.map((item, index2) => (
+                {featured.imageId.map((item, index2) => (
                   <div
                     key={`thumbnail=${[index2]}`}
                     className="item column-2 row-1"
@@ -42,7 +43,7 @@ export default function Featured(props) {
                     <figure className="img-wrapper">
                       <img
                         className="img-cover thumbnail"
-                        src={item.url}
+                        src={`${process.env.REACT_APP_CLOUD}/${item.imageUrl}`}
                         alt=""
                       />
                     </figure>
@@ -63,7 +64,7 @@ export default function Featured(props) {
                     className="btn px-4"
                     isLarge
                     isPrimary
-                    href={`/properties/${featured.id}`}
+                    href={`/properties/${featured._id}`}
                   >
                     Buy Now
                   </Button>

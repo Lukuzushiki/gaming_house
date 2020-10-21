@@ -19,7 +19,11 @@ export default function newGames(props) {
                 >
                   <div className="card card-featured">
                     <figure className="img-wrapper">
-                      <img src={item.imgUrls} alt="" className="img-poster" />
+                      <img
+                        src={`https://server-gaming-house.s3.amazonaws.com/${item.imageId[0].imageUrl}`}
+                        alt=""
+                        className="img-poster"
+                      />
                     </figure>
                     <div className="meta-wrapper">
                       <Button

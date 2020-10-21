@@ -12,13 +12,17 @@ export default function Recomended(props) {
           <div className="col-auto">
             <div className="recomended">
               <figure className="img-wrapper">
-                <img className="img-poster" src={props.data.imgUrls} alt="" />
+                <img
+                  className="img-poster"
+                  src={`${process.env.REACT_APP_CLOUD}/${props.data.imageId[0].imageUrl}`}
+                  alt=""
+                />
               </figure>
 
               <div className="meta-wrapper">
                 <div className="col-6">
                   <h1>{props.data.title}</h1>
-                  <p className="my-5">{props.data.desc}</p>
+                  <p className="my-5">{props.data.description}</p>
                   <Button className="btn px-4" isPrimary isLarge>
                     Buy Now
                   </Button>

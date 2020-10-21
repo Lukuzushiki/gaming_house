@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/community" component={Community}></Route>
         <Route exact path="/news" component={News}></Route>
         <Route exact path="/aboutUs" component={About}></Route>
-        <Route exact path="/detailGames" component={DetailGames}></Route>
+        <Route exact path="/properties/:id" component={DetailGames}></Route>
       </Router>
     </div>
   );

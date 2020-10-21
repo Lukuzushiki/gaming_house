@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import Navbar from "parts/Navbar";
 import PictGame from "parts/gamePict";
@@ -7,20 +8,38 @@ import SystemRequire from "parts/systemRequirements";
 import UserReview from "parts/userReviews";
 import Footer from "parts/Footer";
 
-import gamesData from "json/detailGames.json";
-import communityData from "json/Community.json";
+import { fetchPage } from "store/actions/page";
 
-export default class detailGames extends Component {
+class detailGames extends Component {
+  componentDidMount() {
+    window.title = "Gaming House | Detail Games";
+    window.scrollTo(0, 0);
+
+    if (!this.props.page[this.props.match.params.id])
+      this.props.fetchPage(
+        `/detail-page/${this.props.match.params.id}`,
+        this.props.match.params.id
+      );
+  }
   render() {
+    const { page, match } = this.props;
+
+    if (!page[match.params.id]) return null;
     return (
-      <div>
+      <>
         <Navbar {...this.props} isTransparent />
-        <PictGame data={gamesData} />
-        <Description data={gamesData} />
-        <SystemRequire data={gamesData} />
-        <UserReview post={communityData.post} />
+        <PictGame data={page[match.params.id].item} />
+        <Description data={page[match.params.id].item.description} />
+        <SystemRequire data={page[match.params.id].item.requirementsId} />
+        <UserReview data={page[match.params.id].item.userReviewId} />
         <Footer isSolid />
-      </div>
+      </>
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  page: state.page,
+});
+
+export default connect(mapStateToProps, { fetchPage })(detailGames);
