@@ -2,7 +2,6 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 
 import Button from "elements/Button";
-import ReactHtmlParser from "react-html-parser";
 
 export default function Recomended(props) {
   return (
@@ -23,9 +22,7 @@ export default function Recomended(props) {
               <div className="meta-wrapper">
                 <div className="col-6">
                   <h1>{props.data.title}</h1>
-                  <p className="my-5">
-                    {ReactHtmlParser(props.data.description)}
-                  </p>
+                  <p className="my-5">{props.data.description}</p>
                   <Button className="btn px-4" isPrimary isLarge>
                     Buy Now
                   </Button>

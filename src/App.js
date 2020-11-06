@@ -8,8 +8,6 @@ import Community from "pages/Community";
 import News from "pages/News";
 import About from "pages/About";
 import DetailGames from "pages/detailGames";
-import Signup from "pages/Signup";
-import Signin from "pages/Signin";
 
 function App() {
   return (
@@ -21,8 +19,6 @@ function App() {
         <Route exact path="/news" component={News}></Route>
         <Route exact path="/aboutUs" component={About}></Route>
         <Route exact path="/properties/:id" component={DetailGames}></Route>
-        <Route exact path="/signup" component={Signup}></Route>
-        <Route exact path="/signin" component={Signin}></Route>
       </Router>
     </div>
   );

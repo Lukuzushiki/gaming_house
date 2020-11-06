@@ -2,6 +2,10 @@
   "name": "gaming_house",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.x",
+    "npm": "6.13.7"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -10,11 +14,9 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
-    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
+    "react": "^16.13.1",
     "react-bootstrap-carousel": "^4.0.6",
     "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-dom": "^16.13.1",
@@ -28,7 +30,7 @@
     "react-responsive-carousel": "^3.2.8",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "3.4.1",
     "react-toastify": "^6.0.9",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
